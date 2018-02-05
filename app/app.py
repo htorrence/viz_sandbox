@@ -4,7 +4,9 @@ import dash_html_components as html
 
 from dash.dependencies import Input, Output, State
 
-app = dash.Dash()
+app = dash.Dash('my_app')
+
+flask_app = app.server
 
 app.layout = html.Div([
     html.H1('hello world'),
